@@ -22,4 +22,14 @@ public class TrackerTests
 
         Assert.Equal(1000, tracker.CurrentSteps);
     }
+    [Fact]
+    public void GetProgress_ShouldReturnCorrectPercentage()
+    {
+        var tracker = new Tracker(1000);
+        tracker.AddSteps(500);
+
+        double progress = tracker.GetProgress();
+
+        Assert.Equal(50.0, progress);
+    }
 }

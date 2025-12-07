@@ -19,4 +19,8 @@ public class Tracker
     {
         CurrentSteps += steps;
     }
+    public double GetProgress()
+    {
+        return 0; // Повертаємо неправильне значення, щоб тест впав
+    }
 }
