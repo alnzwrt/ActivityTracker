@@ -13,4 +13,13 @@ public class TrackerTests
 
         Assert.Equal(goal, tracker.DailyGoal);
     }
+    [Fact]
+    public void AddSteps_ShouldIncreaseCurrentSteps()
+    {
+        var tracker = new Tracker(5000);
+
+        tracker.AddSteps(1000);
+
+        Assert.Equal(1000, tracker.CurrentSteps);
+    }
 }
