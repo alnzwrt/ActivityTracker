@@ -21,6 +21,8 @@ public class Tracker
     }
     public double GetProgress()
     {
-        return 0; // Повертаємо неправильне значення, щоб тест впав
+        if (DailyGoal == 0) return 0;
+
+        return (double)CurrentSteps / DailyGoal * 100;
     }
 }
