@@ -12,6 +12,6 @@ public class Tracker
 
     public Tracker(int goal)
     {
-        // Тут поки пусто
+        DailyGoal = goal; 
     }
 }
