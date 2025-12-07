@@ -27,6 +27,6 @@ public class Tracker
     }
     public void Reset()
     {
-
+        CurrentSteps = 0;
     }
 }
