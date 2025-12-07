@@ -17,6 +17,6 @@ public class Tracker
     }
     public void AddSteps(int steps)
     {
-        // Поки що пусто!
+        CurrentSteps += steps;
     }
 }
