@@ -32,4 +32,14 @@ public class TrackerTests
 
         Assert.Equal(50.0, progress);
     }
+    [Fact]
+    public void Reset_ShouldSetStepsToZero()
+    {
+        var tracker = new Tracker(5000);
+        tracker.AddSteps(2000);
+
+        tracker.Reset();
+
+        Assert.Equal(0, tracker.CurrentSteps);
+    }
 }

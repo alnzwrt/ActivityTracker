@@ -25,4 +25,8 @@ public class Tracker
 
         return (double)CurrentSteps / DailyGoal * 100;
     }
+    public void Reset()
+    {
+
+    }
 }
