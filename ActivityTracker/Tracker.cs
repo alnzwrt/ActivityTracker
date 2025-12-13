@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ActivityTracker.Tests;
+﻿namespace ActivityTracker; // Змінено з ActivityTracker.Tests
 
 public class Tracker
 {
@@ -13,7 +7,7 @@ public class Tracker
 
     public Tracker(int goal)
     {
-        DailyGoal = goal; 
+        DailyGoal = goal;
     }
     public void AddSteps(int steps)
     {

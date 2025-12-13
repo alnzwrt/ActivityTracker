@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Xunit;
-namespace ActivityTracker.Tests;
+namespace ActivityTracker;
 
 public class TrackerTests
 {
