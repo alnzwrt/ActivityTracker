@@ -1,13 +1,14 @@
-﻿using ActivityTracker;
+﻿using System.Text;
+using ActivityTracker;
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
 
 Console.WriteLine("=== Activity Tracker Docker ===");
 
-// Ініціалізація
 var goal = 10000;
 var tracker = new Tracker(goal);
 Console.WriteLine($"Ціль на день: {goal} кроків.");
 
-// Симуляція активності
 Console.WriteLine("Йдемо на прогулянку... (+2000 кроків)");
 tracker.AddSteps(2000);
 PrintStats(tracker);
